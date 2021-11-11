@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, inicial-scale=1.0")
+        link(rel='stylesheet', type='text/css', href='/css/bootstrap.css')
+        link(rel='stylesheet', type='text/css', href='/css/style.css')
+        
+        //referencia a google fonts
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Staatliches&display=swap' rel='stylesheet')
+        title #{'Agencia de Viajes'} | #{pagina}
+    
+    body
+        //incluimos código de pug en header
+        include header
+
+        block contenido
+
+        //incluimos código de pug en footer
+        include footer

@@ -1,0 +1,34 @@
+extends ./layout/index
+
+block contenido
+    //despliege de inicio
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="/img/nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies orci metus, in rutrum massa aliquam id. Aliquam porttitor ante eget ultrices aliquet. Duis ultrices vitae dolor ut dignissim. Cras interdum bibendum sapien gravida blandit. Duis ac sapien a felis tempus pulvinar. Curabitur ac metus pretium, ornare massa vitae, accumsan neque. Morbi accumsan leo vitae.
+
+                p Maecenas sit amet urna commodo, pellentesque ipsum at, semper mauris. Fusce nulla risus, congue sed fringilla vel, convallis et justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum tincidunt posuere leo id gravida..
+
+                p Aenean ut dui nec mi euismod blandit. Donec finibus massa ac porta venenatis. Cras molestie arcu est, a interdum mi porttitor nec. Vestibulum ultricies, nisi ac facilisis venenatis, turpis arcu pellentesque magna, a mollis lorem sapien id nulla. In porttitor enim metus.
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", alt="seguridad", class="img-fluid")
+                    h2.mb-4 Seguridad
+                    p Aenean ut dui nec mi euismod blandit. Donec finibus massa ac porta
+                .col-md-4
+                    img(src="img/icono_destinos.svg", alt="destinos", class="img-fluid")
+                    h2.mb-4 Destinos
+                    p Aenean ut dui nec mi euismod blandit. Donec finibus massa ac porta
+                .col-md-4
+                    img(src="img/icono_precios.svg", alt="precios", class="img-fluid")
+                    h2.mb-4 Precios
+                    p Aenean ut dui nec mi euismod blandit. Donec finibus massa ac porta
+                
+
+

@@ -1,0 +1,21 @@
+extends ./layout/index
+
+
+block contenido
+    h1.text-center.mt-5 #{pagina}
+    .row 
+        h2.d-block.w-100.text-center Agregar testimonial
+        
+        .row.justify-content-center.col
+            .col-md-6
+                form(action = "", method = "POST")
+                    .form-group
+                        label(for="nombre") Nombre 
+                        input#nombre(type = "text" placeholder = "Nombre" class = "form-control")
+                        label(for="nombre") Correo 
+                        input#correo(type = "text" placeholder = "Correo" class = "form-control")
+                        label(for="nombre") Descripcion 
+                        textarea#mensaje(placeholder = "Mensaje..." class = "form-control")
+                        input.btn.btn-success.btn-block(type = "submit")
+
+                        //10:20

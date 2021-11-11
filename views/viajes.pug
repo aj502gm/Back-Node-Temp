@@ -1,0 +1,22 @@
+extends ./layout/index
+
+
+block contenido
+    //despliege de inicio
+    //Viaje
+    h1.mt-5.text-center #{pagina} 
+    main.container.mt-5.row.proximos-viajes
+        ea Viaje in viajes
+            p #{viaje.titulo}
+                .col-md-6.col-lg-mb-4
+                    .card
+                        img.card-img-top(src = `img/destinos_${viaje.imagen}.jpg`)
+                    .card-body
+                        h2 #{viaje.titulo}
+
+                        p
+                            |   #{viaje.fecha_salida} - #{viaje.fecha_regreso}
+                        p 
+                            |   #{viaje.disponibles} Disponibles 
+                        p #{viaje.descripcion}
+                        a(href =`viajes/${viajes.slug}`,class = 'btn btn-success btn-block') Info
